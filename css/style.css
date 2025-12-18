@@ -1,122 +1,130 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    padding: 30px;
-    background: linear-gradient(to right, #f25793, #96f35c, #2c40f2);
+  background: linear-gradient(to right, #f25793, #96f35c, #2c40f2);
+  padding-top: 80px;
+}
+header,
+main {
+  padding: 30px;
+}
+main{
+    height: 100vh;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0 50px 0;
-    color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 30px 20px;
 }
 
 .menu ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
 
 .menu li {
-    padding: 10px 20px;
-    background: white;
-    color: black;
-    border-radius: 6px;
-    font-weight: 600;
-    cursor: pointer;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
 }
 #pink:hover {
-    background-color: pink;
+  background-color: pink;
 }
 
 #yellow:hover {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 #green:hover {
-    background-color: green;
-    color: white;
+  background-color: green;
+  color: white;
 }
 
 #red:hover {
-    background-color: red;
-    color: white;
+  background-color: red;
+  color: white;
 }
 
 #blue:hover {
-    background-color: blue;
-    color: white;
+  background-color: blue;
+  color: white;
 }
-
 
 .gallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 10px;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 
+  gap: 10px;
+  margin-bottom: 10px;
+}
 
 .card {
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
-    flex: 1;
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  flex: 1;
 }
-
 
 .main-img {
-    width: 100%;
-    height: 290px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 2px;
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 2px;
 }
 
-
 .thumbs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
 .thumbs img {
-    width: 80px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    flex: 1;
+  width: 80px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex: 1;
 }
-
+.footer {
+  width: 100%;
+  background-color: rgb(83, 80, 80);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
 
 @media (max-width: 900px) {
-    .card {
-        flex: 1 1 calc(50% - 25px);
-    }
+  .card {
+    flex: 1 1 calc(50% - 25px);
+  }
 }
-
 @media (max-width: 600px) {
-    .card {
-        flex: 1 1 100%;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
+  .card {
+    flex: 1 100%;
+  }
 }
